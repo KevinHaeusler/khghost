@@ -1,7 +1,7 @@
 {
-    "name": "ghost-starter-theme",
+    "name": "khgost",
     "description": "A custom theme for ghost",
-    "demo": "https://starter.ghost.io",
+    "demo": "https://khghost.khdev.ch",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=4.0.0",
