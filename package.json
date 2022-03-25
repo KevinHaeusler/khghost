@@ -21,15 +21,15 @@
         "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Kevin Haeusler",
+        "email": "kevin.haeusler@khdev.ch",
+        "url": "https://khdev.ch"
     },
     "gpm": {
         "type": "theme",
         "categories": [
             "Minimal",
-            "Magazine"
+            "Blog"
         ]
     },
     "keywords": [
