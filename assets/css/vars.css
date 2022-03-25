@@ -3,15 +3,15 @@
 
 :root {
     /* Colours */
-    --color-primary: var(--ghost-accent-color, #20a4f3);
+    --color-primary: var(--ghost-accent-color, #564d65);
     --color-base: #1a181b;
     --color-border: #ddd;
-    --color-bg: #f5f5f5;
+    --color-bg: #f2f4f3;
     --color-success: #80b912;
     --color-error: #f05230;
-    --color-primary: #20a4f3;
-    --color-primary-dark: #1d5e87;
-    --color-primary-light: #89ccf3;
+    --color-primary: #564d65;
+    --color-primary-dark: #383340;
+    --color-primary-light: #a4a1ac;
 
     /* Fonts */
     --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",

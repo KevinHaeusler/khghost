@@ -127,6 +127,11 @@ html,
     opacity: 0.5;
 }
 
+.gh-card-content > strong:hover {
+    color: var(--color-primary-light);
+    text-decoration-skip-ink: auto;
+}
+
 /* Page
 /* ---------------------------------------------------------- */
 

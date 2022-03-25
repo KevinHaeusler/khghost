@@ -125,6 +125,10 @@ a:not([class]) {
     color: var(--color-primary);
     text-decoration-skip-ink: auto;
 }
+a:not([class]):hover {
+    color: var(--color-primary-light);
+    text-decoration-skip-ink: auto;
+}
 
 a[class] {
     color: inherit;
