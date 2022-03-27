@@ -71,14 +71,12 @@ html,
     fill: currentcolor;
 }
 
-.gh-head-actions a:first-child svg {
-    margin-left: 20px;
+#github:hover {
+    color: #1f76b6 !important;
 }
-
-.gh-head-actions a:last-child svg {
-    height: 2rem;
+#rss:hover {
+    color: #f78422 !important;
 }
-
 /* Index
 /* ---------------------------------------------------------- */
 

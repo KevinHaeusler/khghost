@@ -41,11 +41,11 @@
         <div class="gh-head-actions">
             <div class="gh-head-actions-list">
                 
-                <a href="https://github.com/KevinHaeusler" title="Github" target="_blank" rel="noopener">{{> "icons/github"}}</a>
-                <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-                <a href="#" onclick="themeToggle()" class="dark-mode-toggle" title="Dark Mode"   rel="noopener">{{> "icons/halfmoon"}}</a>
-                <a href="#" onclick="themeToggle()" class="dark-mode-toggle" title="Light Mode"  rel="noopener">{{> "icons/sun"}}</a>
+                <a href="https://github.com/KevinHaeusler" id="github" title="Github" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+                <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" id="rss" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
 
+                <a href="#" onclick="themeToggle()"  id="light-toggle" class="dark-mode-toggle light-mode" title="Light Mode"  rel="noopener">{{> "icons/sun"}}</a>
+                 <a href="#" onclick="themeToggle()" id="dark-toggle" class="dark-mode-toggle dark-mode" title="Dark Mode"   rel="noopener">{{> "icons/halfmoon"}}</a>
             </div>
         </div>
     </nav>
@@ -103,12 +103,17 @@ $(document).ready(function () {
 
 function themeToggle() {
     document.documentElement.classList.toggle("dark-mode");
-
+let lighttoggle = document.getElementById("light-toggle");
+let darktoggle = document.getElementById("dark-toggle");
   let theme = localStorage.getItem("theme");
   if (theme && theme === "dark-mode") {
     localStorage.setItem("theme", "");
+    lighttoggle.style.display = "none";
+    darktoggle.style.display = "block";
   } else {
     localStorage.setItem("theme", "dark-mode");
+        lighttoggle.style.display = "block";
+    darktoggle.style.display = "none";
   }
 }
 
