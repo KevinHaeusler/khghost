@@ -7,6 +7,10 @@ html.dark-mode .gh-card-content {
     background: var(--color-dark-card);
 }
 
+html.dark-mode .gh-card-box > strong {
+    opacity: 1;
+}
+
 html.dark-mode .gh-card-box > strong:hover {
     color: var(--color-highlight);
 }
