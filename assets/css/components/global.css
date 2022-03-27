@@ -56,7 +56,8 @@ ol[class] {
 
 img {
     display: block;
-    max-width: 100%;
+    max-width: 1200px;
+    margin: auto;
     height: auto;
 }
 

@@ -3,18 +3,13 @@
 
 .gh-canvas {
     display: grid;
-    grid-template-columns:
-        [full-start]
-        minmax(4vw, auto)
-        [wide-start]
-        minmax(auto, 240px)
-        [main-start]
-        min(720px, calc(100% - 8vw))
-        [main-end]
-        minmax(auto, 240px)
-        [wide-end]
-        minmax(4vw, auto)
-        [full-end];
+    grid-template-columns: [full-start] minmax(4vmin, auto) [wide-start] minmax(
+            auto,
+            240px
+        ) [main-start] min(1200px, calc(100% - 8vw)) [main-end] minmax(
+            auto,
+            240px
+        ) [wide-end] minmax(4vmin, auto) [full-end];
 }
 
 .gh-canvas > * {
@@ -129,18 +124,6 @@ figcaption {
 
 figcaption strong {
     color: rgba(0, 0, 0, 0.8);
-}
-
-.gh-canvas :not(pre) code {
-    vertical-align: middle;
-    padding: 0.15em 0.4em 0.15em;
-    border: #e1eaef 1px solid;
-    font-weight: 400 !important;
-    font-size: 0.9em;
-    line-height: 1em;
-    color: #dc0050;
-    background: #f0f6f9;
-    border-radius: 0.25em;
 }
 
 .gh-canvas > pre {

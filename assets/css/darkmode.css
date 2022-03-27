@@ -1,0 +1,16 @@
+html.dark-mode body.home-template {
+    color: rgba(255, 255, 255, 0.75);
+    background-color: var(--color-base);
+}
+
+html.dark-mode .gh-card-content {
+    background: var(--color-dark-card);
+}
+
+html.dark-mode .gh-card-box > strong:hover {
+    color: var(--color-highlight);
+}
+
+html.dark-mode .gh-head {
+    background: var(--color-dark-card);
+}

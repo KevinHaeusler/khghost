@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}">
+<html lang="{{@site.locale}}"{{#match @custom.color_scheme "Dark"}} class="dark-mode"{{/match}}{{#match @custom.color_scheme "Auto"}} class="auto-color"{{/match}}>
 <head>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "built/prism.css"}}" />
+
 
     <title>{{meta_title}}</title>
 
@@ -38,13 +40,12 @@
         </div>
         <div class="gh-head-actions">
             <div class="gh-head-actions-list">
-                {{#if @site.facebook}}
-                <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-                {{/if}}
-                {{#if @site.twitter}}
-                <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-                {{/if}}
+                
+                <a href="https://github.com/KevinHaeusler" title="Github" target="_blank" rel="noopener">{{> "icons/github"}}</a>
                 <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
+                <a href="#" onclick="themeToggle()" class="dark-mode-toggle" title="Dark Mode"   rel="noopener">{{> "icons/halfmoon"}}</a>
+                <a href="#" onclick="themeToggle()" class="dark-mode-toggle" title="Light Mode"  rel="noopener">{{> "icons/sun"}}</a>
+
             </div>
         </div>
     </nav>
@@ -88,10 +89,35 @@ $(document).ready(function () {
         $('body').toggleClass('gh-head-open');
     });
 });
+
+(function() {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('theme') == null) {
+        document.documentElement.classList.add('dark-mode');
+        localStorage.setItem("theme", "dark-mode");
+    }
+    let cookie = localStorage.getItem("theme") || "";
+    if(cookie){
+    	document.documentElement.classList.add(cookie);
+    }
+  })();
+
+function themeToggle() {
+    document.documentElement.classList.toggle("dark-mode");
+
+  let theme = localStorage.getItem("theme");
+  if (theme && theme === "dark-mode") {
+    localStorage.setItem("theme", "");
+  } else {
+    localStorage.setItem("theme", "dark-mode");
+  }
+}
+
 </script>
 
 {{#is "post, page"}}
 <script src="{{asset "built/jquery.fitvids.js"}}"></script>
+<script src="{{asset "built/prism.js"}}"></script>
+
 <script>
 var images = document.querySelectorAll('.kg-gallery-image img');
 images.forEach(function (image) {

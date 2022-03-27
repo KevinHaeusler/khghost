@@ -10,6 +10,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 
 /* Base components */
 @import "vars.css";
+@import "darkmode.css";
 @import "components/global.css";
 @import "components/forms.css";
 @import "components/buttons.css";
@@ -31,7 +32,7 @@ html,
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #fff;
+    background: inherit;
 }
 
 .gh-main {
