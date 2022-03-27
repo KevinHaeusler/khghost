@@ -126,7 +126,7 @@ a:not([class]) {
     text-decoration-skip-ink: auto;
 }
 a:not([class]):hover {
-    color: var(--color-primary-light);
+    color: var(--color-highlight);
     text-decoration-skip-ink: auto;
 }
 

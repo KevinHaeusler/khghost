@@ -82,7 +82,7 @@ html,
 /* ---------------------------------------------------------- */
 
 .gh-card:not(:first-child) {
-    margin: 8vmin auto 0;
+    margin: 4vmin auto 0;
 }
 
 .gh-card-link {
@@ -92,43 +92,88 @@ html,
 
 .gh-card-image {
     width: 100%;
-    max-height: 700px;
     object-fit: cover;
-    margin-bottom: 4vmin;
+    margin-bottom: 2vmin;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+        var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
 }
-
+.gh-card-box {
+    /*Flex*/
+    display: flex;
+    flex-direction: column;
+    padding-right: 2vmin;
+}
 .gh-card-meta {
     display: block;
-    margin: 0 0 1rem;
     font-size: 1.4rem;
     line-height: 1.2em;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     opacity: 0.8;
+    margin-top: 2vmin;
+    margin-bottom: 0.5vmin;
+}
+
+.gh-card-title {
+    font-size: 2.4rem !important;
 }
 
 .gh-card-content {
-    max-width: 720px;
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     font-size: 1.6rem;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+        var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
 }
 
-.gh-card-content p {
-    margin: 1.2rem 0;
-    padding: 0 6vmin;
+@media only screen and (min-width: 992px) {
+    .gh-card-content {
+        width: 1200px;
+        /*Flex*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        align-items: normal;
+        align-content: normal;
+    }
+    .gh-card-image {
+        width: 100%;
+        max-height: 258px;
+        max-width: 430px;
+        object-fit: cover;
+        margin-right: 2vmin;
+        margin-bottom: 0;
+
+        /*Flex*/
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+    }
 }
 
-.gh-card-content > strong {
+.gh-card-box p {
+    margin: 0.4rem 0;
+}
+
+.gh-card-box > strong {
     display: inline-block;
     padding: 1px 0;
     font-weight: 500;
-    box-shadow: 0 -1px 0 0 inset currentColor;
+    text-decoration: underline;
+    margin-top: auto;
+    margin-bottom: 2vmin;
     opacity: 0.5;
 }
 
-.gh-card-content > strong:hover {
-    color: var(--color-primary-light);
+.gh-card-box > strong:hover {
+    color: var(--color-full);
     text-decoration-skip-ink: auto;
 }
 

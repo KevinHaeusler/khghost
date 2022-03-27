@@ -1,5 +1,3 @@
-
-
 /* Content grid
 /* ---------------------------------------------------------- */
 
@@ -8,16 +6,15 @@
     grid-template-columns:
         [full-start]
         minmax(4vw, auto)
-            [wide-start]
-            minmax(auto, 240px)
-                [main-start]
-                    min(720px, calc(100% - 8vw))
-                [main-end]
-            minmax(auto, 240px)
-            [wide-end]
+        [wide-start]
+        minmax(auto, 240px)
+        [main-start]
+        min(720px, calc(100% - 8vw))
+        [main-end]
+        minmax(auto, 240px)
+        [wide-end]
         minmax(4vw, auto)
-        [full-end]
-    ;
+        [full-end];
 }
 
 .gh-canvas > * {
@@ -35,7 +32,6 @@
 .kg-width-full img {
     width: 100%;
 }
-
 
 /* Content & Typography
 /* ---------------------------------------------------------- */
@@ -111,7 +107,6 @@
     }
 }
 
-
 /* Cards
 /* ---------------------------------------------------------- */
 
@@ -126,14 +121,14 @@
 figcaption {
     padding: 1.5rem 1.5rem 0;
     text-align: center;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 1.4em;
 }
 
 figcaption strong {
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .gh-canvas :not(pre) code {
@@ -151,9 +146,9 @@ figcaption strong {
 .gh-canvas > pre {
     overflow: scroll;
     padding: 16px 20px;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
-    box-shadow: 0 2px 6px -2px rgba(0,0,0,.1), 0 0 1px rgba(0,0,0,.4);
+    box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.4);
 }
 
 .kg-embed-card {
@@ -166,7 +161,6 @@ figcaption strong {
 .kg-image-card img {
     margin: auto;
 }
-
 
 /* Galleries
 /* ---------------------------------------------------------- */
@@ -200,7 +194,6 @@ figcaption strong {
     margin: 0 0 0 0.75em;
 }
 
-
 /* Bookmark Cards
 /* ---------------------------------------------------------- */
 
@@ -215,7 +208,7 @@ figcaption strong {
     flex-wrap: wrap;
     flex-direction: row-reverse;
     color: currentColor;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
     font-family: var(--font-sans-serif);
     text-decoration: none;
     border-radius: 5px;
@@ -298,9 +291,8 @@ figcaption strong {
 
 .kg-bookmark-publisher::before {
     content: "•";
-    margin: 0 .5em;
+    margin: 0 0.5em;
 }
-
 
 /* Card captions
 /* ---------------------------------------------------------- */
@@ -321,7 +313,6 @@ figcaption strong {
     grid-column: main-start / main-end;
 }
 
-
 /* Tables
 /* ---------------------------------------------------------- */
 
@@ -333,7 +324,7 @@ figcaption strong {
 .gh-content th {
     padding: 0.5em 0.8em;
     text-align: left;
-    font-size: .75em;
+    font-size: 0.75em;
     text-transform: uppercase;
 }
 
@@ -342,20 +333,18 @@ figcaption strong {
 }
 
 .gh-content tbody tr:nth-child(2n + 1) {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 1px;
 }
 
 .gh-content tbody tr:nth-child(2n + 2) td:last-child {
-    box-shadow:
-        inset 1px 0 rgba(0,0,0,0.1),
-        inset -1px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 1px 0 rgba(0, 0, 0, 0.1), inset -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .gh-content tbody tr:nth-child(2n + 2) td {
-    box-shadow: inset 1px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .gh-content tbody tr:last-child {
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
