@@ -67,13 +67,13 @@
         "posts_per_page": 15,
         "image_sizes": {
             "xxs": {
-                "width": 30
-            },
-            "xs": {
                 "width": 100
             },
-            "s": {
+            "xs": {
                 "width": 300
+            },
+            "s": {
+                "width": 430
             },
             "m": {
                 "width": 600
