@@ -4,6 +4,33 @@ KHGhost is a modified fork of [TryGhost/Starter](https://github.com/TryGhost/Sta
 
 &nbsp;
 
+# Features
+
+How does this differ to the TryGhost/Starter template?
+
+-   Simple Card layout
+-   Works on Desktop and Mobile
+-   Dark Mode
+-   Removed JQuery dependencies for the Mobile hamburger menu
+-   Also removed the JQuery code for infinitescrolling, fitvideo and galleries (no clue what they were for exactly)
+-   Syntax Highlighting with Prism.js
+
+# Todo
+
+I am happy with the way the theme looks so far but there are a few improvements I want to implement.
+
+**Better way to handle front page post count:**
+Right now I just have all posts displayed on the front page. This will become very large and messy once I actually have more than 10 posts. I am thinking of implementing a load more button after X posts that loads the rest. Or make the front page just display a few posts (3 to 5) with some other website related stuff and move posts to another section entirely.
+
+**Tag page:**
+I want to create a specific Tag page in a small card grid layout consisting of an image, the name of the tag and the ammount of posts the tag contains.
+
+**Lightbox integration:**
+This should be a pretty simple integration via [Fluidbox](https://forum.ghost.org/t/fluidbox-integration-for-image-click-lightboxes/7451) but I might look for smaller implementations.
+
+**Cleaning up unused styles and organizing the code better:**
+I am not a webdeveloper so I just mashed together different things until the endresult was to my liking. I want to clean this up a bit so its more useful to other people.
+
 # First time using a Ghost theme?
 
 Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
