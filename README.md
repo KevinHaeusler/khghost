@@ -1,6 +1,6 @@
-# Ghost Starter Theme
+# KHGhost Theme
 
-A starter framework for Ghost themes! Fork this repository and start your development here with all the main things you need to develop a custom Ghost theme.
+KHGhost is a modified fork of [TryGhost/Starter](https://github.com/TryGhost/Starter) and is used on my own website [KHDev](https://khdev.ch). Feel free to use this theme as is on your own blog or fork it and modify it to your specific needs.
 
 &nbsp;
 
@@ -12,18 +12,18 @@ We've documented our default theme pretty heavily so that it should be fairly ea
 
 **The main files are:**
 
-- `default.hbs` - The main template file
-- `index.hbs` - Used for the home page
-- `post.hbs` - Used for individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives
-- `author.hbs` - Used for author archives
+-   `default.hbs` - The main template file
+-   `index.hbs` - Used for the home page
+-   `post.hbs` - Used for individual posts
+-   `page.hbs` - Used for individual pages
+-   `tag.hbs` - Used for tag archives
+-   `author.hbs` - Used for author archives
 
 One neat trick is that you can also create custom one-off templates just by adding the slug of a page to a template file. For example:
 
-- `page-about.hbs` - Custom template for the `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
+-   `page-about.hbs` - Custom template for the `/about/` page
+-   `tag-news.hbs` - Custom template for `/tag/news/` archive
+-   `author-ali.hbs` - Custom template for `/author/ali/` archive
 
 &nbsp;
 
@@ -51,8 +51,8 @@ yarn zip
 
 # PostCSS Features Used
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
+-   Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
+-   [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
 
 &nbsp;
 
