@@ -181,7 +181,7 @@ html,
     margin: 0.4rem 0;
 }
 
-.gh-card-box > strong {
+.gh-card-box > a > strong {
     display: inline-block;
     padding: 1px 0;
     font-weight: 500;
@@ -189,7 +189,7 @@ html,
     opacity: 0.7;
 }
 
-.gh-card-box > strong:hover {
+.gh-card-box > a > strong:hover {
     color: var(--color-full);
     text-decoration-skip-ink: auto;
 }
