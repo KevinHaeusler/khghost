@@ -3,6 +3,14 @@ Re-usable card for linking to posts
 --}}
 
 <article class="gh-card {{post_class}}">
+        <div class="gh-tag-box">
+               {{#if tags}}
+                        {{#foreach tags limit="5"}}
+                        <a href="{{url}}" title="{{name}}" class="gh-card-tag"> {{name}}</a>
+                        {{#unless @last}}+{{/unless}} 
+                        {{/foreach}}
+                {{/if}}
+                </div>
     <a class="gh-card-link" href="{{url}}">
         
         <div class="gh-card-content">
@@ -19,11 +27,16 @@ Re-usable card for linking to posts
             />
         {{/if}}
            <div class="gh-card-box">
+               
             <span class="gh-card-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
             <h2 class="gh-card-title">{{title}}</h2>
             <p>{{excerpt}}</p>
+        
             <strong>Read more</strong>
+            
             </div>
+            
         </div>
+        
     </a>
 </article>

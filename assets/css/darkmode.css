@@ -7,7 +7,7 @@
 }
 
 #light-toggle:hover {
-    color: orange;
+    color: rgb(248, 244, 28);
 }
 
 html.dark-mode body.home-template {
