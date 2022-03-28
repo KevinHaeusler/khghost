@@ -118,7 +118,7 @@ html,
     /*Flex*/
     display: flex;
     flex-direction: column;
-    padding-right: 2vmin;
+    padding: 2vmin;
 }
 .gh-card-meta {
     display: block;
@@ -171,6 +171,9 @@ html,
         flex-basis: auto;
         align-self: auto;
         order: 0;
+    }
+    .gh-card-box {
+        padding: 0 0 2vmin 0;
     }
 }
 
@@ -264,6 +267,16 @@ html,
     grid-column: wide-start / wide-end;
     width: 100%;
     margin: 2vmin 0 0;
+}
+
+.gh-feature-image img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+    .gh-feature-image img {
+        max-width: 1200px;
+    }
 }
 
 .gh-post-footer {

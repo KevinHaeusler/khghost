@@ -10,7 +10,7 @@
     color: rgb(248, 244, 28);
 }
 
-html.dark-mode body.home-template {
+html.dark-mode body {
     color: rgba(255, 255, 255, 0.75);
     background-color: var(--color-base);
 }
