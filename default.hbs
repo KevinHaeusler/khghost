@@ -15,7 +15,7 @@
     {{!-- Outputs important meta data and settings, should always be in <head> --}}
 
 </head>
-<body class="{{body_class}}">
+<body class="{{body_class}}" id="burger-toggle">
 <div class="gh-viewport">
 
 <header id="gh-head" class="gh-head">
@@ -29,7 +29,7 @@
                     {{@site.title}}
                 {{/if}}
             </a>
-            <a class="gh-burger" role="button">
+            <a class="gh-burger" role="button" onclick="burgerToggle()">
                 <div class="gh-burger-box">
                     <div class="gh-burger-inner"></div>
                 </div>
@@ -73,22 +73,17 @@
 
 {{!-- <foot> --}}
 
-<script src="{{asset "built/jquery-3.4.1.min.js"}}"></script>
-
 {{#if pagination.pages}}
 <script>
     var maxPages = parseInt('{{pagination.pages}}');
 </script>
-<script src="{{asset "built/infinitescroll.js"}}"></script>
 {{/if}}
 
 <script>
-$(document).ready(function () {
-    // Mobile Menu Trigger
-    $('.gh-burger').click(function () {
-        $('body').toggleClass('gh-head-open');
-    });
-});
+function burgerToggle(){
+         let burgertoggle = document.getElementById("burger-toggle");
+        burgertoggle.classList.toggle("gh-head-open");
+}
 
 (function() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('theme') == null) {
@@ -120,23 +115,11 @@ let darktoggle = document.getElementById("dark-toggle");
 </script>
 
 {{#is "post, page"}}
-<script src="{{asset "built/jquery.fitvids.js"}}"></script>
+
 <script src="{{asset "built/prism.js"}}"></script>
 
-<script>
-var images = document.querySelectorAll('.kg-gallery-image img');
-images.forEach(function (image) {
-    var container = image.closest('.kg-gallery-image');
-    var width = image.attributes.width.value;
-    var height = image.attributes.height.value;
-    var ratio = width / height;
-    container.style.flex = ratio + ' 1 0%';
-});
-$(document).ready(function () {
-    var $postContent = $(".gh-content");
-    $postContent.fitVids();
-});
-</script>
+
+ 
 {{/is}}
 
 {{ghost_foot}}
