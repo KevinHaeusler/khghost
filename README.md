@@ -34,8 +34,10 @@ This should be a pretty simple integration via [Fluidbox](https://forum.ghost.or
 **Cleaning up unused styles and organizing the code better:**  
 I am not a webdeveloper so I just mashed together different things until the endresult was to my liking. I want to clean this up a bit so its more useful to other people.
 
-**Use Ghosts variables more:**  
+**Use Ghosts custom settings more:**  
 Currently a lot is hardcoded but I want to be able to change certain things like Casper in the Ghost Admin interface. This shouldnt be too difficult, instead of multiple color variables I just need to use Color Mod to change the variables.
+
+https://ghost.org/docs/themes/custom-settings/
 
 # First time using a Ghost theme?
 
