@@ -11,6 +11,14 @@
         {{#if custom_excerpt}}
         <p class="gh-excerpt">{{custom_excerpt}}</p>
         {{/if}}
+            <div class="gh-tag-box">
+               {{#if tags}}
+                        {{#foreach tags}}
+                        <a href="{{url}}" title="{{name}}" class="gh-card-tag"> {{name}}</a>
+                        {{#unless @last}}+{{/unless}} 
+                        {{/foreach}}
+                {{/if}}
+                </div>
 
         {{#if feature_image}}
         <figure class="gh-feature-image">

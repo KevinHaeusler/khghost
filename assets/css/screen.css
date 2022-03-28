@@ -263,7 +263,7 @@ html,
 .gh-feature-image {
     grid-column: wide-start / wide-end;
     width: 100%;
-    margin: 8vmin 0 0;
+    margin: 2vmin 0 0;
 }
 
 .gh-post-footer {
