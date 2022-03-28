@@ -22,6 +22,9 @@ I am happy with the way the theme looks so far but there are a few improvements 
 **Better way to handle front page post count:**
 Right now I just have all posts displayed on the front page. This will become very large and messy once I actually have more than 10 posts. I am thinking of implementing a load more button after X posts that loads the rest. Or make the front page just display a few posts (3 to 5) with some other website related stuff and move posts to another section entirely.
 
+**Featured Posts:**
+This might cross with the Todo above. Basically just display the latest 3 featured posts on the front page at the top.
+
 **Tag page:**
 I want to create a specific Tag page in a small card grid layout consisting of an image, the name of the tag and the ammount of posts the tag contains.
 
