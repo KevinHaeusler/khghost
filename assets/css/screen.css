@@ -326,6 +326,11 @@ html,
     transform: rotate(20deg);
 }
 
+a.gh-author-actions svg {
+    height: 1.8rem;
+    fill: currentcolor;
+}
+
 @media (max-width: 700px) {
     .gh-author-meta {
         font-size: 1.6rem;
