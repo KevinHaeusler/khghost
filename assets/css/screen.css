@@ -157,7 +157,7 @@ html,
         align-content: normal;
     }
     .gh-card-image {
-        width: 100%;
+        width: 100vw;
         max-height: 258px;
         max-width: 430px;
         object-fit: cover;
@@ -173,7 +173,7 @@ html,
         order: 0;
     }
     .gh-card-box {
-        padding: 0 0 2vmin 0;
+        padding: 0 0 1vmin 0;
     }
 }
 
@@ -186,7 +186,6 @@ html,
     padding: 1px 0;
     font-weight: 500;
     text-decoration: underline;
-    margin-top: auto;
     opacity: 0.7;
 }
 
@@ -197,6 +196,7 @@ html,
 
 .gh-tag-box {
     display: block;
+    margin-top: auto;
 }
 .gh-card-tag {
     background-color: var(--color-primary);

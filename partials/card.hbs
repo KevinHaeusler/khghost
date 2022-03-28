@@ -27,7 +27,7 @@ Re-usable card for linking to posts
                 <div class="gh-tag-box">
                {{#if tags}}
                         {{#foreach tags limit="5"}}
-                        <p href="{{url}}" title="{{name}}" class="gh-card-tag"> {{name}}</p>
+                        <a href="{{url}}" title="{{name}}" class="gh-card-tag"> {{name}}</a>
                         {{#unless @last}}+{{/unless}} 
                         {{/foreach}}
                 {{/if}}
