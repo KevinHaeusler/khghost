@@ -63,14 +63,37 @@
 
 <aside class="gh-readmore">
     <div class="gh-readmore-inner gh-container">
-        <div class="gh-readmore-next">
-            {{#next_post}}<a href="{{url}}">{{> "icons/arrow-left"}} <h4>{{title}}</h4></a>{{/next_post}}
+
+      {{#prev_post}}
+         <a class="u-permalink" href={{url}}>
+            <div class="navigation-item navigation-previous">
+                {{#if feature_image}}
+                    <img class="navigation-image lazyload u-object-fit"
+                        data-srcset="{{img_url feature_image size="s"}} 400w, {{img_url feature_image size="m"}} 750w, {{img_url feature_image size="l"}} 960w"
+                                 src="{{img_url feature_image size="s"}}"
+                        data-sizes="auto" alt="{{title}}">
+                {{/if}}
+                <span class="navigation-label">Previous Post</span>
+                <h4 class="navigation-title">{{title}}</h4>
+            </div>
+        </a>
+    {{/prev_post}}
+
+    {{#next_post}}
+    <a class="u-permalink" href={{url}}>
+        <div class="navigation-item navigation-next">
+            {{#if feature_image}}
+                <img class="navigation-image lazyload u-object-fit"
+                    data-srcset="{{img_url feature_image size="s"}} 400w, {{img_url feature_image size="m"}} 750w, {{img_url feature_image size="l"}} 960w"
+                src="{{img_url feature_image size="s"}}"
+                    data-sizes="auto" alt="{{title}}">
+            {{/if}}
+            <span class="navigation-label">Next Post</span>
+            <h4 class="navigation-title">{{title}}</h4>
         </div>
-        <div class="gh-readmore-prev">
-            {{#prev_post}}<a href="{{url}}">
-                <h4>{{title}}</h4> {{> "icons/arrow-right"}}
-            </a>{{/prev_post}}
-        </div>
+    </a>
+    {{/next_post}}
+
     </div>
 </aside>
 

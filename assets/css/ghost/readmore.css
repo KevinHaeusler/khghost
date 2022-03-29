@@ -1,43 +1,11 @@
 /* Read More
 /* ---------------------------------------------------------- */
 
-.gh-readmore {
-    padding: 8vmin 4vmin;
-    font-size: 2.6rem;
-}
-
 .gh-readmore-inner {
     display: grid;
-    grid-gap: 8vmin;
     grid-template-columns: 1fr 1fr;
-}
-
-.gh-readmore-prev {
-    justify-content: flex-end;
-    text-align: right;
-}
-
-.gh-readmore a {
-    display: flex;
-    color: currentColor;
-    text-decoration: none;
-}
-
-.gh-readmore h4 {
-    width: 100%;
-    font-size: inherit;
-}
-
-.gh-readmore svg {
-    display: inline-block;
-    vertical-align: middle;
-    height: 1em;
-    margin: 0.15em 0 0;
-}
-
-.gh-readmore svg + h4,
-.gh-readmore h4 + svg {
-    margin-left: 2vmin;
+    color: white;
+    text-shadow: 0px 0px 2px black;
 }
 
 @media (max-width: 700px) {
@@ -47,4 +15,113 @@
     .gh-readmore svg {
         margin: 0.1em 0 0;
     }
+}
+
+.navigation {
+    display: flex;
+    margin-top: 30px;
+}
+
+.navigation-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 20px;
+    min-height: 150px;
+    width: 100%;
+    background: black;
+}
+
+.navigation-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--black-color);
+    opacity: 0.4;
+    transition: opacity 0.2s var(--animation-base);
+}
+
+.navigation-item:hover::before {
+    opacity: 0.6;
+}
+
+.navigation-previous {
+    margin-right: 7px;
+}
+
+.navigation-next {
+    align-items: flex-end;
+    margin-left: auto;
+    text-align: right;
+}
+
+.navigation-label {
+    position: relative;
+    z-index: 2;
+    padding-top: 25px;
+    color: var(--white-color);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.navigation-title {
+    position: relative;
+    z-index: 2;
+    margin: 5px 0 0;
+    padding-bottom: 25px;
+    color: var(--white-color);
+    font-size: 17px;
+}
+
+@media (max-width: 767px) {
+    .navigation {
+        display: block;
+    }
+
+    .navigation-item {
+        width: 100%;
+    }
+
+    .navigation-next {
+        margin-top: 7px;
+    }
+}
+
+.u-object-fit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.u-permalink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    outline: none;
+
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
 }
