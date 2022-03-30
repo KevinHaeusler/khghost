@@ -2,7 +2,7 @@
     "name": "khgost",
     "description": "A custom theme for ghost",
     "demo": "https://khghost.khdev.ch",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
