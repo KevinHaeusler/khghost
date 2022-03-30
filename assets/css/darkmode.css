@@ -30,3 +30,8 @@ html.dark-mode .gh-card-box > strong:hover {
 html.dark-mode .gh-head {
     background: var(--color-dark-card);
 }
+
+html.dark-mode .kg-bookmark-container {
+    background: #202020 !important;
+    color: white;
+}

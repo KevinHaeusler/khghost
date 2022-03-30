@@ -278,6 +278,25 @@ html,
     }
 }
 
+pre[class*="language-"] {
+    border-radius: 0px !important;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > span,
+.copy-to-clipboard-button {
+    border-radius: 0px !important;
+    background: var(--color-full) !important;
+    margin-left: 5px !important;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+.copy-to-clipboard-button:hover {
+    border-radius: 0px !important;
+    background: var(--color-full) !important;
+    margin-left: 5px !important;
+    color: white !important;
+}
+
 .gh-post-footer {
     margin: 2rem 0;
 }
