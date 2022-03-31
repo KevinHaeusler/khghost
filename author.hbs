@@ -4,6 +4,9 @@
     <div class="gh-container">
 
         {{#author}}
+         {{#contentFor "metaTitle"}}
+            <title>{{name}}</title>
+        {{/contentFor}}
         <header class="gh-page-head">
             {{#if profile_image}}
                 <img class="gh-author-image" src="{{profile_image}}" alt="{{name}}" />

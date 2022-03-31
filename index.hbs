@@ -1,8 +1,11 @@
 {{!< default}}
+ {{#contentFor "metaTitle"}}
+            <title>KHDev</title>
+        {{/contentFor}}
 
 <div class="gh-page">
     <div class="gh-container">
-        {{#get "posts"  include="authors,tags"}}
+        {{#get "posts"  include="authors,tags" filter="featured:true" limit="3"}}
             <div class="gh-postfeed">
                 {{#foreach posts}}
                     {{> "card"}} {{!-- partials/card.hbs --}}
