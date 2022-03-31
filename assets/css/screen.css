@@ -79,6 +79,52 @@ html,
 }
 /* Index
 /* ---------------------------------------------------------- */
+
+.gh-about {
+    display: flex;
+    margin-top: 6vmin;
+}
+.gh-about-cta {
+    margin: 4vmin auto;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: #fff !important;
+    display: inline-block;
+    font-size: 2rem;
+    padding-top: 10px;
+    text-align: center;
+    border: 0;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+        var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+.gh-about-cta:hover {
+    background-color: var(--color-full);
+    opacity: 0.8;
+}
+
+.gh-about-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.gh-about-text h3 {
+    font-weight: 500;
+    margin-bottom: 0.5vmin;
+    font-size: 2.2rem;
+}
+
+.gh-about img {
+    width: 0px;
+}
+
+.gh-container-index {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .gh-section-title {
     align-items: center;
     display: flex;
@@ -86,7 +132,6 @@ html,
     font-weight: 500;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    margin-top: 2rem;
 }
 
 .gh-section-title::after {
@@ -118,7 +163,6 @@ html,
     /*Flex*/
     display: flex;
     flex-direction: column;
-    padding: 2vmin;
 }
 .gh-card-meta {
     display: block;
@@ -127,7 +171,7 @@ html,
     letter-spacing: 0.5px;
     text-transform: uppercase;
     opacity: 0.8;
-    margin-top: 2vmin;
+    margin-top: 1vmin;
     margin-bottom: 0.5vmin;
 }
 
@@ -136,7 +180,7 @@ html,
 }
 
 .gh-card-content {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: left;
     font-size: 1.6rem;
@@ -146,8 +190,13 @@ html,
 }
 
 @media only screen and (min-width: 992px) {
+    .gh-about img {
+        min-width: 250px;
+        width: 250px;
+    }
+
     .gh-card-content {
-        width: 1200px;
+        width: 100%;
         /*Flex*/
         display: flex;
         flex-direction: row;
@@ -172,9 +221,6 @@ html,
         align-self: auto;
         order: 0;
     }
-    .gh-card-box {
-        padding: 0 0 1vmin 0;
-    }
 }
 
 .gh-card-box p {
@@ -187,6 +233,7 @@ html,
     font-weight: 500;
     text-decoration: underline;
     opacity: 0.7;
+    margin-bottom: 1vmin;
 }
 
 .gh-card-box > a > strong:hover {

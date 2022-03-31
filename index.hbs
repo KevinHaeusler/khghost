@@ -4,9 +4,26 @@
         {{/contentFor}}
 
 <div class="gh-page">
-    <div class="gh-container">
+    <div class="gh-container-index" >
+       
+        <div class="gh-about">
+            <div class="gh-about-text">
+                <h2>Well Met!</h2>
+                <h3>Hello I am Kevin a {CurrentYear - 1995} old System Engineer learning to become an AI & ML Engineer</h3>
+                {{@site.description}}
+                 <a href="/blog/" class="gh-about-cta"  >To the blog</a></div>
+              
+               <div class="gh-about-author">
+                <img  height="400" width="300" src="{{asset 'img/KevinHaeusler400x300.webp'}}"/>
+            </div>
+        </div>
+         
+     
+        
+        
+        <div class="gh-section-title">Featured Posts</div>
         {{#get "posts"  include="authors,tags" filter="featured:true" limit="3"}}
-            <div class="gh-postfeed">
+            <div  >
                 {{#foreach posts}}
                     {{> "card"}} {{!-- partials/card.hbs --}}
                 {{/foreach}}
