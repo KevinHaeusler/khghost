@@ -163,6 +163,7 @@ html,
     /*Flex*/
     display: flex;
     flex-direction: column;
+    padding: 2vmin;
 }
 .gh-card-meta {
     display: block;
@@ -220,6 +221,9 @@ html,
         flex-basis: auto;
         align-self: auto;
         order: 0;
+    }
+    .gh-card-box {
+        padding: 0vmin;
     }
 }
 
