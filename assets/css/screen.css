@@ -205,6 +205,7 @@ html,
         justify-content: normal;
         align-items: normal;
         align-content: normal;
+        padding-right: 2vmin;
     }
     .gh-card-image {
         width: 100vw;
