@@ -29,5 +29,15 @@
                 {{/foreach}}
             </div>
         {{/get}}
+
+<div class="gh-featured"></div>
+         <div class="gh-section-title"> Latest Posts</div>
+        {{#get "posts"  include="authors,tags" filter="featured:false" limit="3"}}
+            <div  >
+                {{#foreach posts}}
+                    {{> "card"}} {{!-- partials/card.hbs --}}
+                {{/foreach}}
+            </div>
+        {{/get}}
     </div>
 </div>

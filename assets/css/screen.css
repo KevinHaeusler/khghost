@@ -119,6 +119,9 @@ html,
     width: 0px;
 }
 
+.gh-featured {
+    margin: 4vmin 0;
+}
 .gh-container-index {
     width: 100%;
     max-width: 900px;
