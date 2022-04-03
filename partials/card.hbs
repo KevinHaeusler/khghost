@@ -11,14 +11,12 @@ Re-usable card for linking to posts
             <img class="gh-card-image"
                 srcset="{{img_url feature_image size="xs"}} 379w,
                         {{img_url feature_image size="s"}} 458w,
-                        {{img_url feature_image size="m"}} 853w,
-                        {{img_url feature_image size="l"}} 1280w,
-                        {{img_url feature_image size="xl"}} 1920w,
-                        {{img_url feature_image size="xxl"}} 2560w"
+                        {{img_url feature_image size="m"}} 853w,"
 
                 src="{{img_url feature_image size="s"}}"
                 sizes="(max-width: 400px) 379px, 458x"
                 width="458" height="258"
+                    
                 alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
                  {{#unless @first}} loading="lazy"{{/unless}}
             />
