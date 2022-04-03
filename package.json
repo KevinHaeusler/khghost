@@ -70,19 +70,22 @@
                 "width": 100
             },
             "xs": {
-                "width": 300
+                "width": 379
             },
             "s": {
                 "width": 459
             },
             "m": {
-                "width": 600
+                "width": 853
             },
             "l": {
-                "width": 1200
+                "width": 1280
             },
             "xl": {
-                "width": 2000
+                "width": 1920
+            },
+            "xxl": {
+                "width": 2560
             }
         }
     }
