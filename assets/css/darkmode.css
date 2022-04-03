@@ -35,3 +35,7 @@ html.dark-mode .kg-bookmark-container {
     background: #202020 !important;
     color: white;
 }
+
+html.dark-mode .gh-card-image {
+    border-right: 1px solid var(--color-base);
+}
