@@ -4,8 +4,7 @@
     "demo": "https://khghost.khdev.ch",
     "version": "1.2.3",
     "engines": {
-        "ghost": ">=4.0.0",
-        "ghost-api": "v4"
+        "ghost": ">=4.0.0"
     },
     "license": "MIT",
     "screenshots": {
@@ -44,10 +43,10 @@
     "bugs": "https://github.com/KevinHaeusler/kghost/issues",
     "contributors": "https://github.com/KevinHaeusler/kghost/graphs/contributors",
     "devDependencies": {
-        "autoprefixer": "10.4.4",
+        "autoprefixer": "10.4.8",
         "beeper": "2.1.0",
-        "cssnano": "5.1.5",
-        "gscan": "4.25.3",
+        "cssnano": "5.1.12",
+        "gscan": "4.32.0",
         "gulp": "4.0.2",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "9.0.1",
@@ -56,7 +55,7 @@
         "gulp-util": "3.0.8",
         "gulp-watch": "5.0.1",
         "gulp-zip": "5.1.0",
-        "postcss": "8.4.12",
+        "postcss": "8.4.14",
         "postcss-color-mod-function": "3.0.3",
         "postcss-easy-import": "4.0.0"
     },
@@ -64,6 +63,7 @@
         "defaults"
     ],
     "config": {
+        "card_assets": true,
         "posts_per_page": 15,
         "image_sizes": {
             "xxs": {
