@@ -39,3 +39,15 @@ html.dark-mode .kg-bookmark-container {
 html.dark-mode .gh-card-image {
     border-right: 1px solid var(--color-base);
 }
+
+html.dark-mode .gh-card-box a:not([class]) {
+    color: #b695e7 !important;
+    text-decoration-skip-ink: auto;
+}
+
+
+
+html.dark-mode .gh-article a:not([class]) {
+    color: #b695e7 !important;
+    text-decoration-skip-ink: auto;
+}

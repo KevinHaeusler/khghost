@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns:
         [full-start] minmax(4vmin, auto) [wide-start] minmax(auto, 240px)
-        [main-start] min(700px, calc(100% - 8vw)) [main-end] minmax(auto, 240px)
+        [main-start] min(800px, calc(100% - 8vw)) [main-end] minmax(auto, 240px)
         [wide-end] minmax(4vmin, auto) [full-end];
 }
 
@@ -52,7 +52,7 @@
 .gh-canvas > p {
     
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.6em;
 }
 
@@ -331,3 +331,19 @@ figcaption strong {
 .gh-content tbody tr:last-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(66, 66, 66); 
+  }
+  
